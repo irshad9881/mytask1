@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 4em;
+}
+.contact-header h1 {
+  margin-left: 10em;
+  font-size: 33px;
+  font-weight: 700;
+  color: black;
+  width: 27%;
+  margin-top: 2em;
+}
+.contact-header p {
+}
+.contact-header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.contact-header .logo span {
+  color: red;
+}
+
+.contact-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.contact-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  margin-top: 2em;
+}
+
+.input-container {
+  flex: 1 1;
+  min-width: 250px;
+  position: relative;
+  margin-top: 2em;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: red;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-input {
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  max-width: 80px;
+}
+#conatactinfo {
+  margin-left: 8em;
+}
+.submit-btn {
+  display: block;
+  width: 25%;
+  padding: 15px;
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: darkred;
+}
+
+/* Contact Info Section */
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-info h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 10em;
+  margin-left: 4em;
+}
+
+.info-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-group div {
+  text-align: left;
+}
+
+.info-group h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-group p {
+  font-size: 14px;
+  color: #666;
+}
+.search {
+  width: 517px;
+  height: 58px;
+  top: 35px;
+  left: 492px;
+  border-radius: 9.75px;
+  position: relative;
+  display: flex;
+}
+.search input {
+  width: 297px;
+  background-color: #fff;
+  padding: 17px;
+  border-radius: 0px 8px 8px 0px;
+  /* --text-color: #e6eded; */
+  font-weight: 700;
+  border: 1px solid #e5e7eb;
+  color: #cacaca;
+}
+.button {
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0em;
+  position: relative;
+  margin-right: 0.1em;
+  color: #a10f0f;
+  cursor: pointer;
+  font-weight: 800;
+  background: #b7b2b2;
+  display: flex;
+  background-color: #fff;
+  width: 4em;
+  padding: 8px;
+  border: 2px solid #a4a0a0;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #e5e7eb;
+}
+.button span {
+  color: black;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .info-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

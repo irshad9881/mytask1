@@ -1,0 +1,140 @@
+/* General styling for the section */
+.why-rmax-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+.why-rmax-section h1 {
+  font-size: 33px;
+  font-weight: 700;
+  color: black;
+}
+
+.why-rmax-section p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: #475467;
+  max-width: 800px;
+}
+
+/* Grid for feature cards */
+.features-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  margin-top: 3em;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #fafafa;
+  border-radius: 8px;
+  text-align: center;
+  width: 26%;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.feature-card .view {
+  color: blue;
+  cursor: pointer;
+}
+
+.feature-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 21em;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #1f1f1f;
+}
+
+.feature-card p {
+  margin-top: 0.5rem;
+  color: #475467;
+}
+
+.feature-card1 {
+  margin-bottom: 6em;
+}
+
+.feature-card2 {
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Phone image styling */
+.phnoe {
+  height: 20em;
+  margin-top: 2em;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Media query for tablet and mobile views (up to 768px) */
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;  
+    margin: 0 -0.4em 1em -2rem; 
+  }
+
+  .feature-card img {
+    height: 16em;  
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;  
+  }
+
+  .feature-card p {
+    font-size: 0.9rem; 
+  }
+
+  .phnoe {
+    height: 15em;  
+    margin-top: 1.5em;  
+  }
+
+  /* Specific styling for the mobile version of the phone image card */
+  .phone1 {
+    margin-top: 2em;
+    width: 100%; 
+  }
+}
+
+/* Media query for very small screens (up to 480px) */
+@media (max-width: 480px) {
+  .why-rmax-section h1 {
+    font-size: 1.8rem;  
+  }
+
+  .why-rmax-section p {
+    font-size: 1rem;  
+  }
+
+  .feature-card h3 {
+    font-size: 1rem; 
+  }
+
+  .feature-card p {
+    font-size: 0.8rem;  
+  }
+
+  .phnoe {
+    height: 12em; 
+  }
+}

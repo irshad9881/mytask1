@@ -1,0 +1,33 @@
+.manage{
+    color: #1F1F1F;
+  
+}
+.manage p{
+    margin: auto;
+    width: 42%;
+}
+.manage h1{
+    margin: auto;
+    color: black;
+    width: 35%;
+}
+ 
+.imgage img{
+    width: 26%;
+    margin: auto;
+    display: flex
+;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .manage {
+    
+      width: fit-content;
+    }
+}
+@media (max-width: 768px) {
+    .manage {
+      font-size: 12px;
+    }
+}

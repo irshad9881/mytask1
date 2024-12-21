@@ -1,0 +1,236 @@
+
+  /* Header Styles */
+.header {
+    background-color: #fff;
+    padding: 0rem 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; /* Sticky at top of viewport */
+    z-index: 1000;
+    width: 100%; /* Full width */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #131212;
+    text-decoration: none;
+  }
+  
+  #max {
+    color: #A10F0F;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a,
+  .nav-links li button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li button:hover {
+    color: #ff4b4b;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 3em; /* Adjusted for better alignment */
+    left: 0;
+    width: 20em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown-content {
+    padding: 1rem;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .dropdown-section h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-section ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .dropdown-footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff7f5;
+    border-top: 1px solid #f5d4cd;
+  }
+  
+  .btn-see-all {
+    display: inline-block;
+    color: #f65b3a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #fff7f5;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-see-all:hover {
+    background-color: #f5d4cd;
+  }
+  
+  /* Buttons */
+  .header-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn-login {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-login:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .btn-cta {
+    color: #fff;
+    background-color: #ff4b4b;
+  }
+  
+  .btn-cta:hover {
+    background-color: #e03b3b;
+  }
+  
+  /* Mobile-specific adjustments */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+      margin: 0;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      flex-direction: column;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      width: 100%;
+    }
+  
+    .header-buttons {
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+      width: 35%;
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25px;
+      height: 18px;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+  
+    .hamburger div {
+      background-color: #333;
+      height: 3px;
+      border-radius: 2px;
+    }
+  
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  

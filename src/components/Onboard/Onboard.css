@@ -1,0 +1,171 @@
+.onboard {
+    width: 100%;
+    padding: 1rem;
+}
+
+.head {
+    margin: auto;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.head p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+    flex-wrap: nowrap;
+    position: relative;  /* Allow the vectors to be placed within this container */
+}
+
+.card {
+    width: 25%;  
+    text-align: center;
+    margin: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    position: relative; /* Ensure the card's position is relative to allow proper placement of arrows */
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Positioning for the vector images (arrows) */
+.vector1, .vector2 {
+    position: absolute;
+    top: 38%;   
+    transform: translateY(-50%);  
+    z-index: -1; 
+    width: 30px;  
+    height: auto;
+}
+
+.vector1 {
+    left: 32%;
+    margin-left: -15px; 
+}
+
+.vector2 {
+    right: 41%;  
+    margin-right: -15px; 
+}
+
+/* Card number indicators (small circle at the top-left corner of each card) */
+.card1::before, .card2::before, .card3::before {
+    content: attr(data-number);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ecebeb;
+    top: 92px;
+    left: 89px;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+}
+
+/* Media query for smaller screens (Mobile view) */
+@media (max-width: 768px) {
+    .head h1 {
+        font-size: 1.6rem;  
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column; 
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;  
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .vector1, .vector2 {
+        position: relative; /* Adjust vectors for mobile */
+        margin: 0;
+    }
+    .vector1{
+        top: 38%;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 30px;
+    height: auto;
+    left: -15%;
+    }
+    .vector2{
+        right: 15%;
+    }
+
+    .card1::before, .card2::before, .card3::before {
+        top: -20px; 
+        left: -10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 90%;  
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+    .card1::before, .card2::before, .card3::before {
+        top: 82px;
+        left: 73px;
+        font-size: 1rem;
+    }
+}
